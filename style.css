@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+    
+
+
+body {
+    background: linear-gradient(to bottom, #c0934c, #cdec42);
+    color: #333;
+    direction: rtl;
+}
+
+header {
+    
+    background: #f7da06;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+            width : 1500px; 
+            height :500px;
+
+            display:block;
+            margin: 0 auto;
+        }
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.branch-selection {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.branch-selection label {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.branch-selection select {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.branch-selection select:focus {
+    border-color: #f7da06;
+    outline: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #f7da06;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f7da06;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #f7da06;
+    margin: 20px 0 15px;
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f7da06;
+    color: white;
+    font-weight: 700;
+}
+
+td input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+button {
+    padding: 12px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #f7da06;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #f7da06;
+    transform: translateY(-2px);
+}
+
+#clearOrders {
+    background: #757575;
+}
+
+#clearOrders:hover {
+    background: #616161;
+}
+
+.reports-section table {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    td input {
+        width: 60px;
+    }
+
+    .branch-selection select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

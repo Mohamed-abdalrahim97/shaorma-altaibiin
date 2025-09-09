@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شاورما الطيبين - نظام الطلبات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="tip.jpg" alt="شاورما الطيبين">
+    <style>
+        .logo{
+            width : 1500px; 
+            height :auto;
+            max-width :100%;
+            display:block;
+            margin: 0 auto;
+        }
+                </style>
+        </div>
+        <h2>نظام الطلبات الأسبوعية</h2>
+        <div class="branch-selection">
+            <label for="branch">اختر الفرع:</label>
+            <select id="branch" onchange="loadOrders()">
+                <option value="العيينة">العيينة</option>
+                <option value="حريملاء">حريملاء</option>
+                <option value="سدير">سدير</option>
+                <option value="المجمعة">المجمعة</option>
+                <option value="الغاط">الغاط</option>
+                <option value="البدائع">البدائع</option>
+                <option value="الرس">الرس</option>
+                <option value="عنيزة">عنيزة</option>
+                <option value="ضرما">ضرما</option>
+                <option value="المزاحمية">المزاحمية</option>
+                <option value="القويعية">القويعية</option>
+                <option value="الدلم">الدلم</option>
+                <option value="الدوادمي">الدوادمي</option>
+                <option value="حائل">حائل</option>
+
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="orders-section">
+            <h3>إدخال طلبات الفرع الأسبوعية</h3>
+            <form id="orderForm">
+                <h4>طلبية الثلاجة</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المنتج</th>
+                            <th>وحدة القياس</th>
+                            <th>الكمية</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fridgeTable"></tbody>
+                </table>
+                <h4>طلبية الصوصات</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المنتج</th>
+                            <th>وحدة القياس</th>
+                            <th>الكمية</th>
+                        </tr>
+                    </thead>
+                    <tbody id="saucesTable"></tbody>
+                </table>
+                <h4>طلبية البطاطس</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المنتج</th>
+                            <th>وحدة القياس</th>
+                            <th>الكمية</th>
+                        </tr>
+                    </thead>
+                    <tbody id="potatoesTable"></tbody>
+                </table>
+                <h4>طلبية الدجاج</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المنتج</th>
+                            <th>وحدة القياس</th>
+                            <th>الكمية</th>
+                        </tr>
+                    </thead>
+                    <tbody id="chickenTable"></tbody>
+                </table>
+                <div class="form-actions">
+                    <button type="submit">إرسال الطلب</button>
+                    <button type="button" id="clearOrders">مسح الطلبات</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="reports-section">
+            <h3>تقارير الطلبات</h3>
+            <div id="reportContent"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 شاورما الطيبين - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
